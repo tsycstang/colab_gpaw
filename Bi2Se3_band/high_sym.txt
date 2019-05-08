@@ -1,0 +1,323 @@
+
+  ___ ___ ___ _ _ _  
+ |   |   |_  | | | | 
+ | | | | | . | | | | 
+ |__ |  _|___|_____|  1.5.2
+ |___|_|             
+
+User:   ???@3007845e0667
+Date:   Wed May  8 16:15:56 2019
+Arch:   x86_64
+Pid:    4563
+Python: 3.6.7
+gpaw:   /usr/local/lib/python3.6/dist-packages/gpaw
+_gpaw:  /usr/local/lib/python3.6/dist-packages/
+        _gpaw.cpython-36m-x86_64-linux-gnu.so
+ase:    /usr/local/lib/python3.6/dist-packages/ase (version 3.17.0)
+numpy:  /usr/local/lib/python3.6/dist-packages/numpy (version 1.16.3)
+scipy:  /usr/local/lib/python3.6/dist-packages/scipy (version 1.2.1)
+units:  Angstrom and eV
+cores:  1
+
+Reading from gs_Bi2Se3.gpw
+Read dipole, energy, free_energy
+Reading input parameters:
+  h: 0.1
+  kpts: {gamma: True,
+         size: [8 8 8]}
+  mode: {ecut: 500.0,
+         gammacentered: False,
+         name: pw}
+  occupations: {name: fermi-dirac,
+                width: 0.001}
+  xc: PBE
+
+Initialize ...
+
+Bi-setup:
+  name: Bismuth
+  id: 9be4637686759ed046cc83ce779b1919
+  Z: 83
+  valence: 15
+  core: 68
+  charge: 0.0
+  file: /content/gpaw-data/gpaw-setups-0.9.20000/Bi.PBE.gz
+  cutoffs: 1.21(comp), 2.23(filt), 2.33(core), lmax=2
+  valence states:
+                energy  radius
+    6s(2.00)   -14.385   1.286
+    6p(3.00)    -4.580   1.275
+    5d(10.00)   -27.119   1.349
+    *s          12.827   1.286
+    *p          22.631   1.275
+    *d           0.093   1.349
+
+  Using partial waves for Bi as LCAO basis
+
+Se-setup:
+  name: Selenium
+  id: 2336a0774a38175ff9db42ee3890f88a
+  Z: 34
+  valence: 6
+  core: 28
+  charge: 0.0
+  file: /content/gpaw-data/gpaw-setups-0.9.20000/Se.PBE.gz
+  cutoffs: 0.85(comp), 1.77(filt), 2.67(core), lmax=2
+  valence states:
+                energy  radius
+    4s(2.00)   -17.277   0.847
+    4p(4.00)    -6.512   1.005
+    *s           9.935   0.847
+    *p          20.699   1.005
+    *d           0.000   0.847
+
+  Using partial waves for Se as LCAO basis
+
+Reference energy: -1368007.362297
+
+Spin-paired calculation
+
+Occupation numbers:
+  Fermi-Dirac: width=0.0010 eV
+
+Convergence criteria:
+  Maximum total energy change: 0.0005 eV / electron
+  Maximum integral of absolute density change: 0.0001 electrons
+  Maximum integral of absolute eigenstate change: 4e-08 eV^2
+  Maximum number of iterations: 333
+
+Symmetries present (total): 12
+
+  ( 1  0  0)  ( 1  0  0)  ( 0  1  0)  ( 0  1  0)  ( 0  0  1)  ( 0  0  1)
+  ( 0  1  0)  ( 0  0  1)  ( 1  0  0)  ( 0  0  1)  ( 1  0  0)  ( 0  1  0)
+  ( 0  0  1)  ( 0  1  0)  ( 0  0  1)  ( 1  0  0)  ( 0  1  0)  ( 1  0  0)
+
+  ( 0  0 -1)  ( 0  0 -1)  ( 0 -1  0)  ( 0 -1  0)  (-1  0  0)  (-1  0  0)
+  ( 0 -1  0)  (-1  0  0)  ( 0  0 -1)  (-1  0  0)  ( 0  0 -1)  ( 0 -1  0)
+  (-1  0  0)  ( 0 -1  0)  (-1  0  0)  ( 0  0 -1)  ( 0 -1  0)  ( 0  0 -1)
+
+512 k-points: 8 x 8 x 8 Monkhorst-Pack grid + [1/16,1/16,1/16]
+65 k-points in the irreducible part of the Brillouin zone
+       k-points in crystal coordinates                weights
+   0:     0.00000000    0.00000000    0.00000000          1/512
+   1:     0.12500000    0.00000000   -0.12500000          6/512
+   2:     0.12500000    0.00000000    0.00000000          6/512
+   3:     0.12500000    0.12500000   -0.12500000          6/512
+   4:     0.12500000    0.12500000    0.00000000          6/512
+   5:     0.12500000    0.12500000    0.12500000          2/512
+   6:     0.25000000   -0.12500000   -0.12500000          6/512
+   7:     0.25000000    0.00000000   -0.25000000          6/512
+   8:     0.25000000    0.00000000   -0.12500000         12/512
+   9:     0.25000000    0.00000000    0.00000000          6/512
+          ...
+  64:     0.50000000    0.50000000    0.50000000          1/512
+
+Wave functions: Plane wave expansion
+  Cutoff energy: 500.000 eV
+  Number of coefficients (min, max): 3561, 3621
+  Pulay-stress correction: 0.000000 eV/Ang^3 (de/decut=0.000000)
+  Using FFTW library
+  ScaLapack parameters: grid=1x1, blocksize=None
+  Wavefunction extrapolation:
+    Improved wavefunction reuse through dual PAW basis 
+
+Eigensolver
+   Davidson(niter=2, smin=None, normalize=True) 
+
+Densities:
+  Coarse grid: 36*36*36 grid
+  Fine grid: 72*72*72 grid
+  Total Charge: 0.000000 
+
+Density mixing:
+  Method: separate
+  Backend: pulay
+  Linear mixing parameter: 0.05
+  Mixing with 5 old densities
+  Damping of long wave oscillations: 50 
+
+Hamiltonian:
+  XC and Coulomb potentials evaluated on a 72*72*72 grid
+  Using the PBE Exchange-Correlation functional
+ 
+
+XC parameters: PBE with 2 nearest neighbor stencil
+
+Memory estimate:
+  Process memory now: 104.95 MiB
+  Calculator: 173.67 MiB
+    Density: 14.51 MiB
+      Arrays: 9.25 MiB
+      Localized functions: 1.70 MiB
+      Mixer: 3.56 MiB
+    Hamiltonian: 6.09 MiB
+      Arrays: 6.05 MiB
+      XC: 0.00 MiB
+      Poisson: 0.00 MiB
+      vbar: 0.04 MiB
+    Wavefunctions: 153.07 MiB
+      Arrays psit_nG: 107.74 MiB
+      Eigensolver: 2.07 MiB
+      Projections: 2.23 MiB
+      Projectors: 35.65 MiB
+      PW-descriptor: 5.37 MiB
+
+Total number of cores used: 1
+
+Number of atoms: 5
+Number of atomic orbitals: 30
+Number of bands in calculation: 30
+Bands to converge: occupied states only
+Number of valence electrons: 48
+
+... initialized
+
+Input parameters:
+  kpts: [[0.  0.  0. ],
+         [0.5 0.  0. ],
+         [0.5 0.5 0. ],
+         [0.5 0.5 0.5]]
+  symmetry: off
+
+Initialize ...
+
+Bi-setup:
+  name: Bismuth
+  id: 9be4637686759ed046cc83ce779b1919
+  Z: 83
+  valence: 15
+  core: 68
+  charge: 0.0
+  file: /content/gpaw-data/gpaw-setups-0.9.20000/Bi.PBE.gz
+  cutoffs: 1.21(comp), 2.23(filt), 2.33(core), lmax=2
+  valence states:
+                energy  radius
+    6s(2.00)   -14.385   1.286
+    6p(3.00)    -4.580   1.275
+    5d(10.00)   -27.119   1.349
+    *s          12.827   1.286
+    *p          22.631   1.275
+    *d           0.093   1.349
+
+  Using partial waves for Bi as LCAO basis
+
+Se-setup:
+  name: Selenium
+  id: 2336a0774a38175ff9db42ee3890f88a
+  Z: 34
+  valence: 6
+  core: 28
+  charge: 0.0
+  file: /content/gpaw-data/gpaw-setups-0.9.20000/Se.PBE.gz
+  cutoffs: 0.85(comp), 1.77(filt), 2.67(core), lmax=2
+  valence states:
+                energy  radius
+    4s(2.00)   -17.277   0.847
+    4p(4.00)    -6.512   1.005
+    *s           9.935   0.847
+    *p          20.699   1.005
+    *d           0.000   0.847
+
+  Using partial waves for Se as LCAO basis
+
+Reference energy: -1368007.362297
+
+Spin-paired calculation
+
+Occupation numbers:
+  Fermi-Dirac: width=0.0010 eV
+
+Convergence criteria:
+  Maximum total energy change: 0.0005 eV / electron
+  Maximum integral of absolute density change: 0.0001 electrons
+  Maximum integral of absolute eigenstate change: 4e-08 eV^2
+  Maximum number of iterations: 333
+
+Symmetries present (total): 1
+
+  ( 1  0  0)
+  ( 0  1  0)
+  ( 0  0  1)
+
+4 k-points
+4 k-points in the irreducible part of the Brillouin zone
+       k-points in crystal coordinates                weights
+   0:     0.00000000    0.00000000    0.00000000       0.25000000
+   1:     0.50000000    0.00000000    0.00000000       0.25000000
+   2:     0.50000000    0.50000000    0.00000000       0.25000000
+   3:     0.50000000    0.50000000    0.50000000       0.25000000
+
+Wave functions: Plane wave expansion
+  Cutoff energy: 500.000 eV
+  Number of coefficients (min, max): 3572, 3598
+  Pulay-stress correction: 0.000000 eV/Ang^3 (de/decut=0.000000)
+  Using FFTW library
+  ScaLapack parameters: grid=1x1, blocksize=None
+  Wavefunction extrapolation:
+    Improved wavefunction reuse through dual PAW basis 
+
+Eigensolver
+   Davidson(niter=2, smin=None, normalize=True) 
+
+Density mixing:
+  Method: separate
+  Backend: pulay
+  Linear mixing parameter: 0.05
+  Mixing with 5 old densities
+  Damping of long wave oscillations: 50 
+
+XC parameters: PBE with 2 nearest neighbor stencil
+
+Memory estimate:
+  Process memory now: 109.38 MiB
+  Calculator: 33.58 MiB
+    Density: 14.51 MiB
+      Arrays: 9.25 MiB
+      Localized functions: 1.70 MiB
+      Mixer: 3.56 MiB
+    Hamiltonian: 6.09 MiB
+      Arrays: 6.05 MiB
+      XC: 0.00 MiB
+      Poisson: 0.00 MiB
+      vbar: 0.04 MiB
+    Wavefunctions: 12.97 MiB
+      Arrays psit_nG: 6.59 MiB
+      Eigensolver: 2.06 MiB
+      Projections: 0.14 MiB
+      Projectors: 2.19 MiB
+      PW-descriptor: 2.00 MiB
+
+Total number of cores used: 1
+
+Number of atoms: 5
+Number of atomic orbitals: 30
+Number of bands in calculation: 30
+Bands to converge: occupied states only
+Number of valence electrons: 48
+
+... initialized
+
+Diagonalizing full Hamiltonian (50 lowest bands)
+Matrix size (min, max): 3572, 3598
+Approximate memory used per core to store H_GG, S_GG: 592.603 MB
+Notice: Up to twice the amount of memory might be allocated
+during diagonalization algorithm.
+The least memory is required when the parallelization is purely
+over states (bands) and not k-points, set GPAW(..., parallel={'kpt': 1}, ...).
+1043.1605215072632s |----------------------------------------| Time: 1058.606s
+Writing to high_sym.gpw (mode='all')
+
+Timing:             incl.     excl.
+------------------------------------------
+Full diag:       1058.725     0.161   0.0% |
+ Build H and S:    24.193    24.193   2.3% ||
+ Diagonalize:    1034.343  1034.343  97.6% |--------------------------------------|
+ Projections:       0.028     0.028   0.0% |
+PWDescriptor:       0.143     0.143   0.0% |
+Redistribute:       0.000     0.000   0.0% |
+Set symmetry:       0.023     0.023   0.0% |
+Other:              0.898     0.898   0.1% |
+------------------------------------------
+Total:                     1059.789 100.0%
+
+Date: Wed May  8 16:33:35 2019
